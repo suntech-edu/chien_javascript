@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Danh sách sản phẩm</h1>
+        <ul class="tab">
+            <li class="tab-item active" onclick="changeProductList('trend',this)">Phổ biến</li>
+            <li class="tab-item" onclick="changeProductList('new',this)">Mới nhất</li>
+            <li class="tab-item" onclick="changeProductList('best-sell',this)" >Bán chạy</li>
+        </ul>
+
+        <div id="trend" class="animation">
+            <ul class="product-list">
+                <li><img src="./image/2_1.jpg" alt=""></li>
+                <li><img src="./image/4_1.jpg" alt=""></li>
+                <li><img src="./image/la-co-to-quoc-viet-nam.jpg" alt=""></li>
+                <li><img src="./image/quoc-ky-ao.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Argentina.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Campuchia.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div id="new" class="animation">
+            <ul class="product-list">
+                <li><img src="./image/la-co-to-quoc-viet-nam.jpg" alt=""></li>
+                <li><img src="./image/4_1.jpg" alt=""></li>
+                <li><img src="./image/2_1.jpg" alt=""></li>
+                <li><img src="./image/quoc-ky-ao.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Argentina.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Campuchia.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div id="best-sell" class="animation">
+            <ul class="product-list">
+                <li><img src="./image/2_1.jpg" alt=""></li>
+                <li><img src="./image/4_1.jpg" alt=""></li>
+                <li><img src="./image/la-co-to-quoc-viet-nam.jpg" alt=""></li>
+                <li><img src="./image/quoc-ky-ao.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Argentina.png" alt=""></li>
+                <li><img src="./image/quoc-ky-Campuchia.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./product.js"></script>
+</body>
+</html>
