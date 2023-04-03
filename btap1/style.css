@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+ul, #image-main {
+    float: left;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    width: 200px;
+}
+
+#image-main {
+    width: 500px;
+}
+
+#image-main img {
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 5px;
+}

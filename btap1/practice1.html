@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li><img src="./img/download.jpg" alt="" onclick="Make('one')" id="one"></li>
+        <li><img src="./img/hinh-anh-may-man-cho-ky-thi-co-bon-la.jpg" alt="" onclick="Make('two')" id="two"></li>
+        <li><img src="./img/hinh-anh-nam-buon-chat.jpg" alt="" onclick="Make('three')" id="three"></li>
+        <li><img src="./img/hinh-cute-cho-dien-thoai-iphone.jpg" alt="" onclick="Make('four')" id="four"></li>
+    </ul>
+
+    <div id="image-main">
+        <img src="./img/hinh-anh-may-man-cho-ky-thi-co-bon-la.jpg" id="img-main" alt="">
+    </div>
+
+    <script>
+        function Make(id) {
+            let image = document.getElementById(id).getAttribute('src')
+            document.getElementById('img-main').setAttribute('src', image)
+        }
+    </script>
+</body>
+</html>
