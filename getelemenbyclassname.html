@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="tag">This is tag P one</p>
+    <p class="tag">This is tag P two</p>
+    <p class="tag">This is tag P three</p>
+    <p class="tag">This is tag P four</p>
+    <p class="tag">This is tag P five</p>
+
+    <script>
+        let listPOject = document.getElementsByClassName('tag');
+        for (i = 0; i < listPOject.length; i++) {
+            listPOject[i].style.color = 'red'
+        }
+    </script>
+</body>
+</html>
