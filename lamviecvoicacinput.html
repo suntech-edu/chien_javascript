@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="name"></textarea>
+    <br/>
+    <select name="" id="city">
+        <option value="Hà Nội">Hà Nội</option>
+        <option value="Hải Phòng">Hải Phòng</option>
+        <option value="Bắc Ninh">Bắc Ninh</option>
+    </select>
+    <br/>
+    <input type="radio" class="gender" id="male" value="Nam" name="gender">Male
+    <input type="radio" class="gender" id="Famale" value="Nữ" name="gender">Famale
+    <!-- <input type="text" id="name"> -->
+    <br/>
+    <button onclick="showMessage()">Hiển thị</button>
+    <div id="result"></div>
+    <script>
+        function showMessage() {
+            let name = document.getElementById('name').value
+            let city = document.getElementById('city').value
+            let gender = document.querySelector('.gender:checked').value
+            console.log(gender)
+            document.getElementById('result').innerHTML = `Hello: ${name} <br/>
+            Thành phố của bạn là: ${city}
+            <br/>
+            Giới tính của bạn là: ${gender}
+            `
+        }
+    </script>
+</body>
+</html>
