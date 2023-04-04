@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color For Text</title>
+</head>
+<body>
+    <button onclick="makeRed()">Red</button>
+    <button onclick="makeBlue()">Blue</button>
+    <button onclick="makeGreen()">Green</button>
+    <button onclick="makeChange()">Change</button>
+    <button onclick="makeResest()">Resest</button>
+    <div id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur delectus rerum ullam molestias aut eligendi facere officiis, nostrum explicabo amet voluptatum quidem eaque reiciendis animi! Sequi incidunt asperiores voluptates!
+   </div>
+
+   <script>
+        function makeRed() {
+            document.getElementById('content').style.color = 'red'
+        }
+
+        function makeBlue() {
+            document.getElementById('content').style.color = 'blue'
+        }
+
+        function makeGreen() {
+            document.getElementById('content').style.color = 'green'
+        }
+
+        function makeResest() {
+            document.getElementById('content').style.color = 'black'
+            document.getElementById('content').innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur delectus rerum ullam molestias aut eligendi facere officiis, nostrum explicabo amet voluptatum quidem eaque reiciendis animi! Sequi incidunt asperiores voluptates!'
+        }
+
+        function makeChange() {
+            document.getElementById('content').innerHTML = 'Tien Chien'
+        }
+   </script>
+</body>
+</html>
